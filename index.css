@@ -1,0 +1,126 @@
+body{
+    background-color:#00091a;
+}
+
+.container{
+    background-color:#00091a;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: rgb(213, 211, 211) !important;
+    transition: transform 0.2s ease-in;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+    color: rgb(21, 255, 0) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(21, 255, 0)  !important;
+    font-weight: bold;
+}
+
+.navbar-toggler{
+    background-color: rgb(21, 255, 0);
+}
+
+#name h1{
+    font-size: 4vw;
+    color: rgb(236, 231, 231);
+    padding-top: 15%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row h3{
+    color: rgb(212, 189, 189);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#message{
+    color: rgb(144, 224, 24);
+}
+
+#icon-link{
+    padding-top: 1%;
+    padding-bottom: 17%;
+}
+
+#icon-link a{
+    padding-left: 1%;
+    font-size: 2vw;
+    color: rgb(244, 244, 236);
+}
+
+@media(max-width : 990px){
+    .navbar-collapse {
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        width: 100%;
+        background-color: #00091a;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        z-index: 3000;
+    }
+
+    #name h1{
+        font-size: 7vw;
+        margin-top: 5%;
+        margin-left: 7%;
+    }
+
+    .col-8{
+        margin-top: 1%;
+        margin-left: 23%;
+    }
+
+    #icon-link{
+        margin-top: 1%;
+        margin-left: 22%;
+    }
+}
+
+@media(max-width : 580px){
+    #name h1{
+        font-size: 9vw;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+
+    .col-8{
+        margin-top: 1%;
+        margin-left: 21%;
+    }
+
+    #icon-link{
+        margin-top: 1%;
+        margin-left: 20%;
+    }
+}
+
+
+@media(max-width : 440px){
+    #name h1{
+        font-size: 12vw;
+        margin-top: 45%;
+        margin-left: -10%;
+    }
+
+    .col-8{
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+
+    #icon-link{
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+}
+
+
