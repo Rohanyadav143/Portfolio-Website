@@ -2,10 +2,6 @@ body{
     background-color:#00091a;
 }
 
-.row{
-    color: antiquewhite;
-}
-
 .navbar{
     background-color: rgb(13, 27, 65);
 }
@@ -36,6 +32,39 @@ body{
     font-size: 2.5rem;
     color: rgb(213, 211, 211);
     font-weight: bold;
+}
+
+.address {
+    margin: 2px 0; /* Adjust top & bottom spacing */
+    line-height: 1.2; /* Reduce line height */
+}
+
+
+#icon_lnk{
+    font-size: larger;
+    display: flex;
+    gap: 8%;
+}
+
+.col-md-5{
+    background-color: rgb(13, 27, 65);
+    color: aliceblue;
+    margin-top: 10px;
+    padding-top: 1.5%;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+#con{
+    margin-left: 16%;
+    color:rgba(231, 117, 3, 0.707);
+}
+
+#heading{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(21, 255, 0);
+    padding-top: 1%;
 }
 
 @media(max-width : 990px){
