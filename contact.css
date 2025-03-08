@@ -35,8 +35,8 @@ body{
 }
 
 .address {
-    margin: 2px 0; /* Adjust top & bottom spacing */
-    line-height: 1.2; /* Reduce line height */
+    margin: 2px 0;
+    line-height: 1.2;
 }
 
 
@@ -58,6 +58,9 @@ body{
 #con{
     margin-left: 16%;
     color:rgba(231, 117, 3, 0.707);
+    font-weight: bolder;
+    font-style:inherit;
+    margin-top: 10px;
 }
 
 #heading{

@@ -38,6 +38,36 @@ body{
     font-weight: bold;
 }
 
+#about{
+    padding-left: 10%;
+    color:rgba(231, 117, 3, 0.707);
+    font-weight: bolder;
+    font-style:inherit;
+    margin-top: 1%;
+}
+
+.school{
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+.details{
+    background-color: rgb(13, 27, 65);
+    padding-left: 5%;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.details:hover{
+    background-color: rgb(17, 39, 100);
+}
+
+.details:hover u{
+    color:rgb(184, 224, 8);
+}
+
 @media(max-width : 990px){
     #name{
         padding-left: 30%;
@@ -45,10 +75,24 @@ body{
     }
 }
 
+@media(max-width : 767px){
+    .school{
+        margin-left: 12%;
+        margin-top: 3%;
+    }
+}
+
 @media(max-width : 650px){
     #name{
         padding-left: 20%;
         font-size: 3rem;
+    }
+}
+
+@media(max-width : 575px){
+    .school{
+        margin-left:0;
+        margin-top: 5%;
     }
 }
 
