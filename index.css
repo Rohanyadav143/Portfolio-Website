@@ -1,5 +1,11 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
     background-color:#00091a;
+    overflow-x: hidden;
 }
 
 .container{
@@ -14,13 +20,16 @@ body{
 
 .navbar-nav .nav-link:hover {
     transform: scale(1.1);
-    font-weight: bold;
     color: rgb(238, 187, 18) !important;
 }
 
 .navbar-nav .nav-link.active {
     color: rgb(21, 255, 0)  !important;
     font-weight: bold;
+}
+
+.bi:hover{
+    color: rgb(4, 232, 72);
 }
 
 .navbar-toggler{

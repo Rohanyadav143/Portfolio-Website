@@ -1,4 +1,10 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    overflow-x: hidden;
     background-color:#00091a;
 }
 
@@ -10,6 +16,10 @@ body{
     background-color: rgb(13, 27, 65);
 }
 
+.main-box{
+    padding-bottom: 50px;
+}
+
 .navbar-nav .nav-link {
     margin-left: 10%;
     font-size: 1.2rem;
@@ -19,7 +29,6 @@ body{
 
 .navbar-nav .nav-link:hover {
     transform: scale(1.1);
-    font-weight: bold;
     color: rgb(238, 187, 18) !important;
 }
 
@@ -81,6 +90,21 @@ body{
 .row1{
     background-color: rgb(12, 29, 76);
     margin-top: 1.5%;
+}
+
+#heading{
+    font-weight: bolder;
+}
+
+.row1:hover{
+    background-color: rgb(1, 8, 105);
+    color: rgb(4, 255, 0);
+}
+
+.logog{
+    color: rgb(200, 200, 7);
+    font-size: 27px;
+    font-weight: bold;
 }
 
 @media(max-width : 990px){
