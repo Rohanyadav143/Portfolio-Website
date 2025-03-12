@@ -51,11 +51,42 @@ body,html{
     margin-top: 1%;
 }
 
-.boxes{
-    background-color: rgb(244, 245, 246);
-    color: red;
+.school{
     margin-left: 6%;
     margin-top: 1%;
+}
+
+.details{
+    background-color: rgb(13, 27, 65);
+    padding-left: 5%;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.details:hover{
+    background-color: rgb(17, 39, 100);
+    transform: scale(1.02);
+}
+
+.details:hover .links a{
+    color: rgb(34, 255, 0);
+}
+
+.details:hover u{
+    color:rgb(184, 224, 8);
+}
+
+.links a{
+    color: #dcdde0;
+    text-decoration: none;
+    font-style:oblique;
+}
+
+.padd{
+    margin-bottom: 10px;
 }
 
 @media(max-width : 990px){
@@ -66,9 +97,13 @@ body,html{
 }
 
 @media(max-width : 767px){
-    .boxes{
-        margin-left: 11%;
+    .school{
+        margin-left: 12%;
         margin-top: 3%;
+    }
+
+    .padd{
+        margin-bottom: 20px;
     }
 }
 
@@ -79,10 +114,10 @@ body,html{
     }
 }
 
-@media(max-width : 569px){
-    .boxes{
-        margin-left: 8.5%;
-        margin-top: 3%;
+@media(max-width : 575px){
+    .school{
+        margin-left: 7.5%;
+        margin-top: 5%;
     }
 }
 

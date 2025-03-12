@@ -82,6 +82,12 @@ body,html{
     }
 }
 
+@media(max-width : 767px){
+    .padd{
+        margin-bottom:20px;
+    }
+}
+
 @media(max-width : 650px){
     #name{
         padding-left: 20%;

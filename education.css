@@ -25,7 +25,6 @@ body,html{
 
 .navbar-nav .nav-link:hover {
     transform: scale(1.1);
-    /* font-weight: bold; */
     color: rgb(238, 187, 18) !important;
 }
 
@@ -85,6 +84,10 @@ body,html{
     .school{
         margin-left: 12%;
         margin-top: 3%;
+    }
+
+    .padd{
+        margin-bottom: 30px;
     }
 }
 
