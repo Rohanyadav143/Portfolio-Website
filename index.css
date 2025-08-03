@@ -66,10 +66,9 @@ body,html{
     color: rgb(237, 233, 233);
 }
 
-@media(max-width : 990px){
+@media(max-width : 991px){
     .navbar-collapse {
-        position: absolute;
-        top: 80px;
+        top: 50px;
         right: 15px;
         width: 100%;
         background-color: #00091a;

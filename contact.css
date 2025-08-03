@@ -95,6 +95,16 @@ body,html{
     }
 }
 
+@media(max-width : 575px){
+    .addrr{
+        margin-bottom: -25px;
+    }
+
+    .emalis{
+        margin-bottom: -25px;
+    }
+}
+
 @media(max-width : 500px){
     #name{
         padding-left: 10%;
