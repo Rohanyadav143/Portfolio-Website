@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="education.css">
+    <title>Education</title>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" id="name" href="index.html">Rohan Yadav</a>
@@ -18,66 +19,96 @@
             </button>
             <div class="offset-lg-1 collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav text-white">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="education.html">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="certificate.html">Certificates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="skills.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Resume1.pdf">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificate.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Resume1.pdf">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="row">
+
+    <!-- Education Section -->
+    <div class="container mt-4">
         <h6 id="about">Education---------</h6>
-        <div class="col-lg-3 col-md-5 col-sm-9 col-10 school">
-            <div class="row"><img src="RR.jpeg" class="img-fluid" alt="Error"></div>
-            <div class="row details">
-                <h6><a href="https://rrimt.ac.in/"><u>B.tech in Computer Science and Engineering</u></a>
-                </h6>
-                <h5><b>R.R. Group Of Institution</b></h5>
-                <h6>August 2022 - Present</h6>
-                <h6>Percentage : 84.5</h6>
+        <div class="row g-4">
+
+            <!-- College -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="details education-card">
+                    <img src="RR.jpeg" class="img-fluid education-img" alt="R.R. Group of Institutions">
+                    <div class="education-info">
+                        <h6><u>B.Tech in Computer Science and Engineering</u></h6>
+                        <h5><b>R.R. Group Of Institution</b></h5>
+                        <h6>August 2022 - June 2026</h6>
+                        <h6>Percentage : 82%</h6>
+                        <div class="links mt-2">
+                            <a href="https://rrimt.ac.in/" class="btn btn-primary btn-sm" target="_blank">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intermediate -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="details education-card">
+                    <img src="PGSS.jpeg" class="img-fluid education-img" alt="P.G. Senior Secondary School">
+                    <div class="education-info">
+                        <h6><u>Intermediate</u></h6>
+                        <h5><b>P.G. Senior Secondary School</b></h5>
+                        <h6>March 2021 - April 2022</h6>
+                        <h6>Percentage : 63.67%</h6>
+                        <div class="links mt-2">
+                            <a href="https://pgssschool.in/" class="btn btn-primary btn-sm" target="_blank">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High School -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="details education-card">
+                    <img src="PGSS.jpeg" class="img-fluid education-img" alt="P.G. Senior Secondary School">
+                    <div class="education-info">
+                        <h6><u>High School</u></h6>
+                        <h5><b>P.G. Senior Secondary School</b></h5>
+                        <h6>March 2019 - April 2020</h6>
+                        <h6>Percentage : 75.67%</h6>
+                        <div class="links mt-2">
+                            <a href="https://pgssschool.in/" class="btn btn-primary btn-sm" target="_blank">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Key Achievements Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h6 id="about">Key Achievements---------</h6>
+                <ul class="list-group list-group-flush achievements">
+                    <li class="list-group-item achievement-item">Solved <b>800+ coding problems</b> on platforms like <b>LeetCode, HackerRank, GeeksforGeeks</b>.</li>
+                    <li class="list-group-item achievement-item">Ranked <b>195/30,880</b> in national-level <b>Sarkari Naukri Coding Contest</b>.</li>
+                    <li class="list-group-item achievement-item">Ranked <b>427/36,305</b> in a <b>LeetCode Weekly Contest</b>.</li>
+                    <li class="list-group-item achievement-item">Participated in competitive <b>hackathons and workshops</b>, enhancing problem-solving and collaborative skills.</li>
+                    <li class="list-group-item achievement-item">Designed and deployed <b>7+ personal projects</b> showcasing full-stack development skills.</li>
+                </ul>
             </div>
         </div>
-        <div class="col-lg-3 col-md-5 col-sm-9 col-10 school">
-            <div class="row"><img src="PGSS.jpeg" class="img-fluid" alt="Error"></div>
-            <div class="row details">
-                <h6><a href="https://pgssschool.in/"><u>Intermediate</u></a></h6>
-                <h5><b>P.G. Senior Secondary School</b></h5>
-                <h6>March 2021 - April 2022</h6>
-                <h6>Percentage : 65.67</h6>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-5 col-sm-9 col-10 school">
-            <div class="row"><img src="PGSS.jpeg" class="img-fluid" alt="Error"></div>
-            <div class="row details">
-                <h6><a href="https://pgssschool.in/"><u>High School</u></a></h6>
-                <h5><b>P.G. Senior Secondary School</b></h5>
-                <h6>March 2019 - April 2020</h6>
-                <h6>Percentage : 75.67</h6>
-            </div>
-        </div>
+
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

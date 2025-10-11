@@ -35,8 +35,10 @@ body,html{
 
 #name{
     font-size: 2.5rem;
-    color: rgb(213, 211, 211);
     font-weight: bold;
+    background: linear-gradient(10deg, #ffaa00, #a800b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .address {
@@ -52,12 +54,19 @@ body,html{
 }
 
 .col-md-5{
-    background-color: rgb(13, 27, 65);
+    background: linear-gradient(10deg, #3c345d, #595b33);
     color: aliceblue;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 1.5%;
+    height: 200px;
     padding-bottom: 20px;
     font-size: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.col-md-5:hover{
+    transform: translateY(-8px);
 }
 
 #con{

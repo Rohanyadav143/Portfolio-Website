@@ -43,8 +43,10 @@ body,html{
 
 #name{
     font-size: 2.5rem;
-    color: rgb(213, 211, 211);
     font-weight: bold;
+    background: linear-gradient(10deg, #ffaa00, #a800b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about-box{
@@ -90,6 +92,12 @@ body,html{
     min-width: 320px;
     border: 3px solid rgb(238, 0, 255);
     border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#selfImage:hover {
+    transform: translateY(-6px);
+    border: 3px solid rgb(255, 162, 0);
 }
 
 .bi{
@@ -97,22 +105,30 @@ body,html{
 }
 
 .row1{
-    background-color: rgb(12, 29, 76);
-    margin-top: 1.5%;
+    border-radius: 15px;
+    border: 2.5px solid rgb(0, 200, 194);
+    background: linear-gradient(10deg, #4c0b91, rgb(28, 119, 115));
+    margin-top: 1.5%;   
+    transition: all 0.3s ease-in-out;
+}
+
+.row1 h5{
+    background: linear-gradient(10deg, #ffc400, #51ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #heading{
     font-weight: bolder;
 }
 
-.row1:hover{
-    background-color: rgb(1, 8, 105);
-    color: rgb(4, 255, 0);
+.row1:hover {
+    transform: translateY(-6px);
 }
 
 .logog{
-    color: rgb(200, 200, 7);
-    font-size: 27px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     font-weight: bold;
 }
 

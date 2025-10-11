@@ -1,4 +1,4 @@
-const words = ["Student","Coder","Software-Developer","Java-Full-Stack-Developer"];
+const words = ["Dedicated","Focused","Adaptive","Creative","Curious","Student","Coder","Full-Stack-Developer"];
 let wordIndex = 0;
 let charIndex = 0;
 let displayText = document.getElementById("message");

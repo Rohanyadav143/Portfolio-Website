@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-body,html{
+body, html{
     overflow-x: hidden;
-    background-color:#00091a;
+    background-color: #00091a;
 }
 
 .row{
@@ -39,76 +39,107 @@ body,html{
 
 #name{
     font-size: 2.5rem;
-    color: rgb(213, 211, 211);
     font-weight: bold;
+    background: linear-gradient(10deg, #ffaa00, #a800b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about{
-    padding-left: 10%;
+    padding-left: 5%;
     color:rgba(231, 117, 3, 0.707);
     font-weight: bolder;
-    font-style:inherit;
     margin-top: 1%;
 }
 
-.school{
-    margin-left: 6%;
-    margin-top: 1%;
-    margin-bottom: 10px;
-}
-
-.details{
-    background-color: rgb(13, 27, 65);
-    padding-left: 5%;
-    padding-top: 7%;
-    padding-bottom: 5%;
+/* Education Cards */
+.education-card{
+    background: linear-gradient(90deg, #272525, rgb(80, 79, 79));
+    padding: 15px;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
 }
 
-.details:hover{
+.education-card:hover{
+    transform: scale(1.03);
     background-color: rgb(17, 39, 100);
 }
 
-.details:hover u{
-    color:rgb(184, 224, 8);
+.education-card:hover u{
+    color: #ffe600;
 }
 
-@media(max-width : 990px){
+.education-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.education-info h6, .education-info h5{
+    margin: 5px 0;
+}
+
+.education-info h5{
+    color: #af00d6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.links a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.links a:hover{
+    color: rgb(34, 255, 0);
+}
+
+.achievements {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.achievement-item {
+    background: linear-gradient(90deg, #d6d4d4, rgb(84, 53, 171));
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.achievement-item:hover {
+    transform: scale(1.02);
+    background-color: rgb(17, 39, 100);
+}
+
+
+/* Responsive */
+@media(max-width: 990px){
     #name{
-        padding-left: 30%;
-        font-size: 3rem;
+        padding-left: 25%;
+        font-size: 2.5rem;
     }
 }
 
-@media(max-width : 767px){
-    .school{
-        margin-left: 12%;
-        margin-top: 3%;
+@media(max-width: 575px){
+    .education-card{
+        width: 100%;
     }
-
-    .padd{
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width : 650px){
-    #name{
-        padding-left: 20%;
-        font-size: 3rem;
-    }
-}
-
-@media(max-width : 575px){
-    .school{
-        margin-left: 7.5%;
-        margin-top: 5%;
-    }
-}
-
-@media(max-width : 500px){
     #name{
         padding-left: 10%;
-        font-size: 8vw;
+        font-size: 6vw;
     }
 }

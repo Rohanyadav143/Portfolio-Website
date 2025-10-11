@@ -39,8 +39,10 @@ body,html{
 
 #name{
     font-size: 2.5rem;
-    color: rgb(213, 211, 211);
     font-weight: bold;
+    background: linear-gradient(10deg, #ffaa00, #a800b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about{
@@ -52,42 +54,58 @@ body,html{
 }
 
 .school{
-    margin-left: 6%;
-    margin-top: 1%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .details{
-    background-color: rgb(13, 27, 65);
-    padding-left: 5%;
-    padding-top: 7%;
-    padding-bottom: 5%;
+   background: linear-gradient(90deg, #272525, rgb(80, 79, 79));
+    padding: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    /* height: 380px; Increased height */
+    width: 90%; /* Reduced width slightly */
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
-.details:hover{
+.details:hover {
     background-color: rgb(17, 39, 100);
     transform: scale(1.02);
 }
 
-.details:hover .links a{
-    color: rgb(34, 255, 0);
+.details:hover .project-info u {
+    color: #ffe600;
 }
 
-.details:hover u{
-    color:rgb(184, 224, 8);
+.project-img{
+    width: 100%;
+    height: 180px !important;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-info h6{
+    margin: 5px 0;
+    margin-top: 13px;
 }
 
 .links a{
     color: #dcdde0;
     text-decoration: none;
-    font-style:oblique;
+    font-style: oblique;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
-.padd{
-    margin-bottom: 10px;
+.links a:hover{
+    color: rgb(34, 255, 0);
 }
 
 @media(max-width : 990px){
@@ -99,12 +117,7 @@ body,html{
 
 @media(max-width : 767px){
     .school{
-        margin-left: 12%;
-        margin-top: 3%;
-    }
-
-    .padd{
-        margin-bottom: 20px;
+        margin-left: 0;
     }
 }
 
@@ -117,8 +130,7 @@ body,html{
 
 @media(max-width : 575px){
     .school{
-        margin-left: 7.5%;
-        margin-top: 5%;
+        margin-left: 0;
     }
 }
 

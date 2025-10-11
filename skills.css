@@ -39,8 +39,10 @@ body,html{
 
 #name{
     font-size: 2.5rem;
-    color: rgb(213, 211, 211);
     font-weight: bold;
+    background: linear-gradient(10deg, #ffaa00, #a800b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about{
@@ -52,21 +54,33 @@ body,html{
 }
 
 .boxes{
-    background-color: rgb(244, 245, 246);
+    background: linear-gradient(10deg, #dad3d3, #4b4848);
     margin-top: 2%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.boxes:hover{
+    transform: translateY(-8px);
 }
 
 #heading{
-    color:black;
+    color:rgb(255, 255, 255);
     font-weight: bolder;
     font-style: inherit;
     margin-left: 5%;
     padding-top: 1%;
 }
 
-.boxes:hover #heading{
-    color: rgb(15, 189, 12);
+.tool-icon {
+    width: 120px;
+    margin-top: 10px;
+    height: 90px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 
 img{
     height: 100px;
