@@ -1,3 +1,13 @@
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    pointer-events: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -58,7 +68,7 @@ body,html{
 }
 
 .details{
-   background: linear-gradient(90deg, #272525, rgb(80, 79, 79));
+    background-color: #160000;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -71,7 +81,7 @@ body,html{
 }
 
 .details:hover {
-    background-color: rgb(17, 39, 100);
+    background-color: rgb(20, 24, 36);
     transform: scale(1.02);
 }
 
@@ -116,8 +126,8 @@ body,html{
 }
 
 @media(max-width : 767px){
-    .school{
-        margin-left: 0;
+    .projDiv {
+        margin-left: 30px;
     }
 }
 
@@ -132,11 +142,31 @@ body,html{
     .school{
         margin-left: 0;
     }
+
+    .projDiv{
+        margin-left: 23px;
+    }
+
 }
 
 @media(max-width : 500px){
     #name{
         padding-left: 10%;
         font-size: 8vw;
+    }
+
+    .projDiv{
+        margin-left: 18px;
+    }
+}
+
+@media(max-width : 460px){
+    #name{
+        padding-left: 10%;
+        font-size: 8vw;
+    }
+
+    .projDiv{
+        margin-left: 16px;
     }
 }

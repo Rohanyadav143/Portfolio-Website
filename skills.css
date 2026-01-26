@@ -1,3 +1,13 @@
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    pointer-events: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +64,7 @@ body,html{
 }
 
 .boxes{
-    background: linear-gradient(10deg, #dad3d3, #4b4848);
+    background: linear-gradient(10deg, #b8b8a4, #e29282);
     margin-top: 2%;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -66,7 +76,7 @@ body,html{
 }
 
 #heading{
-    color:rgb(255, 255, 255);
+    color:rgb(176, 3, 229);
     font-weight: bolder;
     font-style: inherit;
     margin-left: 5%;
