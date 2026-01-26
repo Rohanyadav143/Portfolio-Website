@@ -1,3 +1,13 @@
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    pointer-events: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +64,7 @@ body,html{
 }
 
 .col-md-5{
-    background: linear-gradient(10deg, #3c345d, #595b33);
+    background-color: #160000;
     color: aliceblue;
     margin-top: 20px;
     padding-top: 1.5%;
@@ -74,7 +84,7 @@ body,html{
     color:rgba(231, 117, 3, 0.707);
     font-weight: bolder;
     font-style:inherit;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #heading{
@@ -82,6 +92,46 @@ body,html{
     font-weight: bold;
     color: rgb(21, 255, 0);
     padding-top: 1%;
+}
+
+#contactForm {
+    background: linear-gradient(10deg, #1a1a2e, #162447);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#contactForm input, 
+#contactForm textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #0f1621;
+    color: white;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #bbb;
+}
+
+#contactForm button {
+    background: linear-gradient(10deg, #ffaa00, #a800b7);
+    border: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+#contactForm button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(10deg, #21ff00, #0099ff);
+}
+
+#formMessage{
+    font-size: 30px !important;
+    color: #21ff00 !important;
+    font-weight: bold !important;
+    justify-self: center;
 }
 
 @media(max-width : 990px){

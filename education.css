@@ -1,3 +1,13 @@
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    pointer-events: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +64,7 @@ body, html{
 
 /* Education Cards */
 .education-card{
-    background: linear-gradient(90deg, #272525, rgb(80, 79, 79));
+    background-color: #160000;
     padding: 15px;
     border-radius: 10px;
     display: flex;
@@ -68,7 +78,7 @@ body, html{
 
 .education-card:hover{
     transform: scale(1.03);
-    background-color: rgb(17, 39, 100);
+    background-color: rgb(48, 47, 47);
 }
 
 .education-card:hover u{
